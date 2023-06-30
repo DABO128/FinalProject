@@ -1,0 +1,541 @@
+/* 
+    Author:Filsenor226;
+    Theme: Restaurant Food Order-table booking;
+*/
+
+/* CSS for All */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.navbar{
+    background-color: #161111;
+    
+}
+
+
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: rgb(14, 14, 14);
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #ff6b81;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff4757;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #ff4757;
+}
+h2{
+    color: #11295c;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size:1,5rem;
+    margin: 10 20px;
+
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+fieldset{
+    border: 1px solid rgb(255, 255, 255);
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.footer
+{
+    background-color: #656262;
+
+}
+
+.error{
+    padding:2%;
+    color:red;
+}
+
+.success{
+    padding:2%;
+    color:green;
+}
+
+
+/* CSSS for navbar section */
+
+.logo{
+    width: 10%;
+    float: left;
+}
+.menu{
+    line-height: 60px;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+
+/* CSS for Food SEarch Section */
+
+.food-search{
+    background-image: url(../images/new\ baground);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: rgb(206, 16, 16);
+    border-radius: 5px;
+}
+
+
+/* CSS for Categories */
+.categories{
+    padding: 1% 0;
+}
+
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+
+
+/* CSS for Food Menu */
+.food-menu{
+    background-color: #706c6b;
+    padding: 4% 0;
+}
+.food-menu-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #043383;
+}
+
+
+/* CSS for Social */
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+/* for Order Section */
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: black;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+
+
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+}
+
+/* contact css*/
+.new{
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(rgba(233, 233, 240, 0.956),rgba(112, 112, 114, 0.5)),url(bgfood.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.contact-title
+{
+    margin-top: 50px;
+    color: #f7387b;
+    text-transform: uppercase;
+    transition: all 45 ease-in-out;
+}
+
+.contact-title h1{
+    font-size: 30px;
+    line-height: 10px;
+    color:rgb(243, 29, 89) 
+
+}
+
+.contact-title h2{
+    font-size: 16px;
+    color:rgb(211, 12, 12);
+
+
+}
+form{
+    margin-top: 20px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control{
+    width: 600px;
+    background: rgb(97, 95, 95);
+    border: none;
+    outline: none ;
+    border-bottom: 1px solid rgb(234, 32, 32);
+    color: rgb(12, 12, 11);
+    font-size: 18px;
+    margin-bottom:15px;
+}
+
+input
+{
+    height: 45px;
+
+}
+
+form .submit
+{
+    background: #08124c;
+    border-color: rgb(152, 36, 36);
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    
+}
+
+form .submit:hover
+{
+    background-color: #ff4757;
+    cursor: pointer;
+}
+
+
+
+  
+
+  
+/*css for reservation*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.reserve{
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdreamland.com.mv%2Fwp-content%2Fuploads%2F2018%2F09%2FDreamland_Restaurant_Sea_View_02.jpg&f=1&nofb=1&ipt=b23b7014ec8c3de459feb6df0e159b5e976ca3b5ac3969a853e92783a51498c3&ipo=images');
+    background-position: center;
+    background-size: auto;
+
+}
+
+h1{
+    text-align: center;
+    color: rgb(12, 11, 11);
+}
+h2{
+    text-align: center;
+    color: rgb(22, 16, 16);
+}
+
+#form{
+    background-color: rgb(158, 153, 153);
+    height: 565px;
+    width: 700px;
+    margin: auto;
+    margin-top: 90px;
+    opacity: 0.7;
+}
+
+#first-group{
+    display: inline-block;    
+    border:none;
+    width: 47%;
+    margin-top: 7px;
+    /*position:absolute;*/
+    margin-left: 14px;
+
+}
+
+#second-group{
+    display: inline-block;    
+    border: none;
+    width: 47%;
+    margin-top: 7px;
+    margin-left: 14px;
+    font-size: 17pt;
+    float:left;
+}
+
+
+
+#content{
+    border: 1px solid rgb(15, 8, 8);
+    margin: 10px;
+    margin-left: 8px;
+    padding: 5px;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fdreamland.com.mv%2Fwp-content%2Fuploads%2F2018%2F09%2FDreamland_Restaurant_Sea_View_02.jpg&f=1&nofb=1&ipt=b23b7014ec8c3de459feb6df0e159b5e976ca3b5ac3969a853e92783a51498c3&ipo=images');
+    position:center;
+    border-radius: 5px;
+
+}
+
+#content #input-group{
+    border:none;
+    outline: none;
+    background: transparent;
+    margin-left: px;
+    color: white;
+}
+
+::placeholder{
+    color:aliceblue
+}
+
+.fa {
+    display:inline-block;
+    color: rgb(231, 227, 227);
+    border-right:1px solid white ;
+    padding: 8px;
+    margin-left: 8px;
+}
+
+.input{
+    background-color: rgb(233, 228, 228);
+    color: rgb(29, 29, 2);
+
+}
+
+#submit-btn{
+    margin-top:50px;
+    margin-left: 290px;
+    background: transparent;
+    color: rgb(85, 60, 14);
+    width: 135px;
+    border: 5px solid rgb(211, 88, 11);
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+
+/*boking detail*/
+
+
+.wrapper{
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+.tbl-full{
+    width: 100%;
+}
+
+.tbl-30{
+width: 35%;
+}
+
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+table tr td{
+    padding: 1%;
+}
+.btn-primary{
+    background-color:blue;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color: darkblue;
+}
+
+.btn-secondary{
+    background-color:rgb(14, 144, 59);
+    padding: 5px 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-secondary:hover{
+    background-color: rgb(14, 130, 13);
+}
+
+
+
+.btn-danger{
+    background-color:red;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-danger:hover{
+    background-color: tomato;
+}
+.success{
+    color:rgb(17, 172, 53);
+}
+.error{
+    color:crimson;
+}
+
+
